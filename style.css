@@ -1,0 +1,45 @@
+/* Le rouge des liens */
+
+.menu-item a:hover, 
+.menu-item a:focus, 
+.menu-item.current-menu-item > a {
+  color: #dd3333;
+}
+
+/* Correctif taille image */
+
+.post-type-archive-portfolio .portfolio .entry-content,
+.portfolio-featured-image,
+.portfolio-featured-image a,
+.portfolio-featured-image img
+ {
+	height: 100%;
+}
+
+.portfolio-featured-image a {
+	display: block;
+}
+
+.portfolio-featured-image img {
+	object-fit: cover;
+}
+
+/* 
+ * Header Padding - for portfolio items
+ *
+ * Needed when title is longer than "Project #1" !
+ *
+*/
+.post-type-archive-portfolio .portfolio .entry-title {
+	padding: 0 1em;
+}
+
+/*
+ * Correctif pour boutons d'inscription Mailchimp
+ * Wdiget numéro 9
+*/
+@media (min-width: 768px) {
+	.front-page-9 input {
+	  margin-bottom: 1em;
+	}
+}
