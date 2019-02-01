@@ -6,12 +6,16 @@
   color: #dd3333;
 }
 
-/* Correctif taille image */
+/* Correctif taille image
+ * Pour les blocs portfolio
+*/
 
 .post-type-archive-portfolio .portfolio .entry-content,
 .portfolio-featured-image,
 .portfolio-featured-image a,
-.portfolio-featured-image img
+.portfolio-featured-image img,
+.front-page-5 .display-posts-listing a,
+.front-page-5 .display-posts-listing img
  {
 	height: 100%;
 }
@@ -20,7 +24,8 @@
 	display: block;
 }
 
-.portfolio-featured-image img {
+.portfolio-featured-image img,
+.front-page-5 .display-posts-listing img {
 	object-fit: cover;
 }
 
@@ -43,3 +48,24 @@
 	  margin-bottom: 1em;
 	}
 }
+
+/*
+ Before Header Widget
+ Il faut surcharger la couleur de fond du widget:
+*/
+
+.before-header #simple-social-icons-3 ul li a, 
+.before-header #simple-social-icons-3 ul li a:hover, 
+.before-header #simple-social-icons-3 ul li a:focus {
+	background-color: transparent !important;
+	font-size: 16px;
+	border: 0px;
+}
+
+/* FrontPage taille des widgets */
+
+.home .content .widget-title {
+	margin-top: 50px;
+	margin-top: 5rem;
+}
+
