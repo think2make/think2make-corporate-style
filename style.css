@@ -69,3 +69,17 @@
 	margin-top: 5rem;
 }
 
+/*
+ Largeur Maximale des pages
+*/
+
+.content-sidebar-wrap {
+	max-width: 896px;
+}
+
+/* épaisseur du bold (le thème met 600) */
+.entry-content b,
+.entry-content strong {
+	font-weight: 700;
+}
+
