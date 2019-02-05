@@ -83,3 +83,73 @@
 	font-weight: 700;
 }
 
+/*
+ * Strong testimonial styling
+*/
+
+/*
+ * Before / After
+*/
+
+
+#genesis-content .strong-view.modern .testimonial-content:before {
+	content: '“';
+	display: block;
+	font-size: 80px;
+	font-size: 8rem;
+	font-family: 'Georgia', 'Apple Garamond', 'Baskerville', 'Times New Roman', 'Droid Serif', 'Times', 'Source Serif Pro', serif;
+	line-height: 1;
+	margin: 0 0 -0.5em;
+	color: rgba(42, 49, 57, 0.2);
+	position: relative;
+	width: auto;
+	left: 0;
+	top: 0;
+}
+
+#genesis-content .strong-view.modern .testimonial-content:before {
+	top: 0;
+}
+
+#genesis-content .strong-view.modern .testimonial-content:after {
+  content: "";
+  right: 0;
+  bottom: 0;
+}
+
+
+#genesis-content .strong-view.modern .testimonial-content {
+  font-size: inherit;
+  font-style: italic;
+  margin: 0 56px;
+  position: relative;
+}
+
+/* Témoignage: Nom */
+#genesis-content .strong-view.modern .testimonial-name {
+	font-size: 1em;
+	color: #2a3139;
+}
+
+/* Témoignage: Fonction */
+#genesis-content .strong-view.modern .testimonial-company {
+	font-size: small;
+	margin-bottom: 1em;
+}
+
+#genesis-content .strong-view.modern .testimonial-company a {
+	text-decoration: none;
+}
+
+/* Dot non-selectionné */
+#genesis-content .strong-view.pager-style-buttons .wpmslider-pager-link:before {
+	content: "\f10c"; /* cercle vide */
+	content: "\f111"; /* cercle rempli */
+	/*color: #999;*/
+	opacity: 0.3;
+	transition: all .5s linear 0s;
+}
+/* Actif */
+#genesis-content .strong-view.pager-style-buttons .wpmslider-pager-link.active:before {
+	opacity: 1;
+}
