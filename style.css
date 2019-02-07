@@ -1,3 +1,20 @@
+/* @group Global Styles */
+
+/*
+ Largeur Maximale des pages
+*/
+
+.content-sidebar-wrap {
+	max-width: 896px;
+}
+
+/* épaisseur du bold (le thème met 600) */
+.entry-content b,
+.entry-content strong {
+	font-weight: 700;
+}
+
+
 /* Le rouge des liens */
 
 .menu-item a:hover, 
@@ -5,6 +22,64 @@
 .menu-item.current-menu-item > a {
   color: #dd3333;
 }
+
+/* @end */
+
+/* @group Gutenblocks */
+
+.wp-block-cover-text a {
+	color: #d10f0f;
+	background: rgba(255, 255, 255, 0.75);
+	border-radius: 1em;
+	border: 0;
+	padding: 0.1em 0.8em;
+	box-shadow: none !important;
+	word-break: keep-all;
+	display: block;
+}
+
+.wp-block-cover-text a:hover {
+	background: rgba(255, 255, 255, 0.9);
+}
+
+/* @end */
+
+/* @group FrontPage */
+
+/*
+ * Correctif pour boutons d'inscription Mailchimp
+ * Wdiget numéro 9
+*/
+@media (min-width: 768px) {
+	.front-page-9 input {
+	  margin-bottom: 1em;
+	}
+}
+
+/*
+ Before Header Widget
+ Il faut surcharger la couleur de fond du widget:
+*/
+
+.before-header #simple-social-icons-3 ul li a, 
+.before-header #simple-social-icons-3 ul li a:hover, 
+.before-header #simple-social-icons-3 ul li a:focus {
+	background-color: transparent !important;
+	font-size: 16px;
+	border: 0px;
+}
+
+/* FrontPage taille des widgets */
+
+.home .content .widget-title {
+	margin-top: 50px;
+	margin-top: 5rem;
+}
+
+/* @end */
+
+
+/* @group Portfolio */
 
 /* Correctif taille image
  * Pour les blocs portfolio
@@ -39,58 +114,14 @@
 	padding: 0 1em;
 }
 
-/*
- * Correctif pour boutons d'inscription Mailchimp
- * Wdiget numéro 9
-*/
-@media (min-width: 768px) {
-	.front-page-9 input {
-	  margin-bottom: 1em;
-	}
-}
+/* @end */
+
+
+/* @group Testimonials */
 
 /*
- Before Header Widget
- Il faut surcharger la couleur de fond du widget:
+ * Before / After Decoration
 */
-
-.before-header #simple-social-icons-3 ul li a, 
-.before-header #simple-social-icons-3 ul li a:hover, 
-.before-header #simple-social-icons-3 ul li a:focus {
-	background-color: transparent !important;
-	font-size: 16px;
-	border: 0px;
-}
-
-/* FrontPage taille des widgets */
-
-.home .content .widget-title {
-	margin-top: 50px;
-	margin-top: 5rem;
-}
-
-/*
- Largeur Maximale des pages
-*/
-
-.content-sidebar-wrap {
-	max-width: 896px;
-}
-
-/* épaisseur du bold (le thème met 600) */
-.entry-content b,
-.entry-content strong {
-	font-weight: 700;
-}
-
-/*
- * Strong testimonial styling
-*/
-
-/*
- * Before / After
-*/
-
 
 #genesis-content .strong-view.modern .testimonial-content:before {
 	content: '“';
@@ -153,3 +184,5 @@
 #genesis-content .strong-view.pager-style-buttons .wpmslider-pager-link.active:before {
 	opacity: 1;
 }
+
+/* @end */
